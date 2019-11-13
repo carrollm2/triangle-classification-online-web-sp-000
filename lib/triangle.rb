@@ -26,7 +26,6 @@ class Triangle
     if sides_length_test == false || sides_sum_test == false
       raise TriangleError
     else
-      #if length1 == length2 && length2 == length3
       if length_array.uniq.length == 1
         :equilateral
       elsif length_array.uniq.length == 2
