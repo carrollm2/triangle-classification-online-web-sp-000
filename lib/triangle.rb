@@ -23,15 +23,17 @@ class Triangle
       side_sum_test = false
     end
 
-
-
-    #if length1 == length2 && length2 == length3
-    if length_array.uniq.length == 1
-      :equilateral
-    elsif length_array.uniq.length == 2
-      :isosceles
-    elsif length_array.uniq.length == 3
-      :scalene
+    if sides_length_test == false || sides_sum_test == false
+      raise TriangleError
+    else
+      #if length1 == length2 && length2 == length3
+      if length_array.uniq.length == 1
+        :equilateral
+      elsif length_array.uniq.length == 2
+        :isosceles
+      elsif length_array.uniq.length == 3
+        :scalene
+      end
     end
   end
 
