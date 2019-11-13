@@ -15,11 +15,11 @@ class Triangle
     #sides_sum = length_array.sum
 
     sides_sum_test = true
-    if length1 + length2 <= length3
+    if length1 + length2 < length3
       side_sum_test = false
-    elsif length1 + length3 <= length2
+    elsif length1 + length3 < length2
       side_sum_test = false
-    elsif length2 + length3 <= length1
+    elsif length2 + length3 < length1
       side_sum_test = false
     end
 
