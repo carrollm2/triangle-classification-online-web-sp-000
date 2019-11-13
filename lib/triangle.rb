@@ -14,7 +14,6 @@ class Triangle
     length_array = [length1, length2, length3]
 
     sides_length_test = length_array.all?{|side| side > 0}
-    #sides_sum = length_array.sum
 
     sides_sum_test = true
     if length1 + length2 <= length3
