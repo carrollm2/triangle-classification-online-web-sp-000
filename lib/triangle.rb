@@ -25,7 +25,7 @@ class Triangle
       side_sum_test = false
     end
 
-    binding.pry
+    #binding.pry
 
     if sides_length_test == false || sides_sum_test == false
       raise TriangleError
