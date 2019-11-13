@@ -12,12 +12,18 @@ class Triangle
     length_array = [length1, length2, length3]
 
     sides_length_test = length_array.all?(|side| side > 0)
-    sides_sum = length_array.sum
+    #sides_sum = length_array.sum
 
-    length_array.each_with_index do |val, index|
-      
-
+    sides_sum_test = true
+    if length1 + length2 <= length3
+      side_sum_test = false
+    elsif length1 + length3 <= length2
+      side_sum_test = false
+    elsif length2 + length3 <= length1
+      side_sum_test = false
     end
+      
+    
 
     #if length1 == length2 && length2 == length3
     if length_array.uniq.length == 1
