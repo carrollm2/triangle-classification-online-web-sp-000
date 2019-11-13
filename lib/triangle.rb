@@ -22,7 +22,7 @@ class Triangle
     elsif length2 + length3 <= length1
       side_sum_test = false
     end
-      
+
     
 
     #if length1 == length2 && length2 == length3
