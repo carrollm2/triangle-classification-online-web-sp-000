@@ -19,11 +19,9 @@ class Triangle
     sides_sum_test = true
     if length1 + length2 <= length3
       sides_sum_test = false
-    end
-    if length1 + length3 <= length2
+    elsif length1 + length3 <= length2
       sides_sum_test = false
-    end
-    if length2 + length3 <= length1
+    elsif length2 + length3 <= length1
       sides_sum_test = false
     end
 
